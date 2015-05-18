@@ -147,7 +147,7 @@ int SensorBase::sspEnable(const char* sensorname, int sensorvalue, int en)
     int fd;
 
     sspfile = fopen(SSP_DEVICE_ENABLE, "r+");
-    fscanf(sspfile, "%d", &oldValue);
+    fscanf(sspfile, "%d", &oldvalue);
     fclose(sspfile);
 
 //Accel sensor is first on and last off, if we are disabling it
