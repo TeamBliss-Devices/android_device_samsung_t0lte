@@ -22,6 +22,8 @@
 #include <dirent.h>
 #include <sys/select.h>
 
+#include <linux/lightsensor.h>
+
 #include <cutils/log.h>
 
 #include "LightSensor.h"
@@ -72,7 +74,7 @@ int LightSensor::setDelay(int32_t handle, int64_t ns)
 {
     int fd;
 
-    strcpy(&input_sysfs_path[input_sysfs_path_len], "light_poll_delay");
+    strcpy(&input_sysfs_path[input_sysfs_path_len], "poll_delay");
     fd = open(input_sysfs_path, O_RDWR);
     if (fd >= 0) {
         char buf[80];
