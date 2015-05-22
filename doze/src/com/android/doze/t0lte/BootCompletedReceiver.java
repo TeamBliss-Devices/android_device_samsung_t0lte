@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.doze.t0lte;
+package com.android.doze.t0lte;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

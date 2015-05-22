@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.doze.t0lte;
+package com.android.doze.t0lte;
 
 import android.app.Activity;
 import android.app.IntentService;
