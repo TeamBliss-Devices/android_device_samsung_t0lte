@@ -50,16 +50,6 @@ __BEGIN_DECLS
 
 #define SSP_DEVICE_ENABLE   "/sys/class/sensors/ssp_sensor/enable"
 
-const int ssp_sensors[] = {
-  SSP_ACCEL,
-  SSP_GYRO,
-  SSP_MAG,
-  SSP_PRESS,
-  SSP_PROX,
-  SSP_LIGHT
-};
-
-
 /*****************************************************************************/
 
 /*
@@ -108,8 +98,8 @@ const int ssp_sensors[] = {
 
 // conversion of magnetic data to uT units
 #define CONVERT_M                   (1.0f/16.0f)
-#define CONVERT_M_X                 (-CONVERT_M)
-#define CONVERT_M_Y                 (-CONVERT_M)
+#define CONVERT_M_X                 (CONVERT_M)
+#define CONVERT_M_Y                 (CONVERT_M)
 #define CONVERT_M_Z                 (CONVERT_M)
 
 /* conversion of orientation data to degree units */
@@ -119,11 +109,11 @@ const int ssp_sensors[] = {
 #define CONVERT_O_R                 (CONVERT_O)
 
 // conversion of gyro data to SI units (radian/sec)
-#define RANGE_GYRO                  (2000.0f*(float)M_PI/180.0f)
+#define RANGE_GYRO                  (500.0f*(float)M_PI/180.0f)
 #define CONVERT_GYRO                ((70.0f / 4000.0f) * ((float)M_PI / 180.0f))
-#define CONVERT_GYRO_X              (CONVERT_GYRO)
-#define CONVERT_GYRO_Y              (CONVERT_GYRO)
-#define CONVERT_GYRO_Z              (CONVERT_GYRO)
+#define CONVERT_GYRO_X              (-CONVERT_GYRO)
+#define CONVERT_GYRO_Y              (-CONVERT_GYRO)
+#define CONVERT_GYRO_Z              (-CONVERT_GYRO)
 
 #define SENSOR_STATE_MASK           (0x7FFF)
 
