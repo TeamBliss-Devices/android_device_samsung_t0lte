@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.doze.t0lte;
+package org.cyanogenmod.doze.t0lte;
 
 import android.content.ActivityNotFoundException;
 import android.content.Context;

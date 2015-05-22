@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.anddroid.doze"
+    package="org.cyanogenmod.doze"
     android:versionCode="1"
     android:versionName="1.0"
     android:sharedUserId="android.uid.system">
@@ -11,14 +11,14 @@
     <application android:label="t0lteDoze"
                  android:persistent="true">
 
-        <receiver android:name="com.android.doze.t0lte.BootCompletedReceiver">
+        <receiver android:name="org.cyanogenmod.doze.t0lte.BootCompletedReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
 
-        <service android:name="org.android.doze.t0lte.DozeService"
+        <service android:name="org.cyanogenmod.doze.t0lte.DozeService"
                  android:permission="t0lteDozeService">
         </service>
 
