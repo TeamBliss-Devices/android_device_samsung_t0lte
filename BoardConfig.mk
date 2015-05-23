@@ -28,8 +28,8 @@ BOARD_GPS_SET_PRIVACY := true
 -include vendor/samsung/t0lte/BoardConfigVendor.mk
 
 # BlissPop Configs
-TARGET_TC_ROM := 4.8
-TARGET_TC_KERNEL := 4.8
+TARGET_TC_ROM := 4.9
+TARGET_TC_KERNEL := 4.9
 BLISSIFY := true
 BLISS_O3 := true
 BLISS_STRICT := false
