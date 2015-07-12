@@ -5,6 +5,9 @@ PRODUCT_RELEASE_NAME := t0lte
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
+#Bliss Viper Audio Mod
+BLISS_AUDIO_MOD := viper
+
 # Inherit device configuration
 $(call inherit-product, device/samsung/t0lte/full_t0lte.mk)
 
