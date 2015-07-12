@@ -27,6 +27,9 @@ BOARD_GPS_SET_PRIVACY := true
 # inherit from the proprietary version
 -include vendor/samsung/t0lte/BoardConfigVendor.mk
 
+# LZMA Compression
+WITH_LZMA_OTA := true
+
 # BlissPop Configs
 BLISS_WIPE_CACHES := 1
 TARGET_TC_ROM := 4.8
