@@ -1,6 +1,3 @@
-#Bliss Viper Audio Mod
-BLISS_AUDIO_MOD := viper
-
 # Release name
 PRODUCT_RELEASE_NAME := t0lte
 
@@ -19,6 +16,9 @@ $(call inherit-product, vendor/bliss/config/nfc_enhanced.mk)
 
 # Inherit some common Bliss stuff.
 $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
+
+#Bliss Viper Audio Mod
+BLISS_AUDIO_MOD := viper
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := t0lte
